@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecos de Aether</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="game-container"></div>
+
+  <!-- Phaser 3.90.0 vía CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/phaser.min.js"></script>
+
+  <!-- Nuestras Scenes: deben cargarse ANTES de main.js -->
+  <script src="js/scenes/BootScene.js"></script>
+  <script src="js/scenes/PreloadScene.js"></script>
+  <script src="js/scenes/WorldScene.js"></script>
+
+  <!-- main.js arranca el juego usando las clases anteriores -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
